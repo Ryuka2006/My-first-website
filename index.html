@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Assignment</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Bayon:regular);
+        @import url(https://fonts.googleapis.com/css?family=Siemreap:regular);
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Bayon', sans-serif;
+        }
+
+        p,
+        li,
+        span,
+        a,
+        div {
+            font-family: 'Siemreap', sans-serif;
+        }
+    </style>
+    <style type="text/tailwindcss">
+
+        @theme {
+        --color-title-color: #0B0A0A;
+        --color-text-color: #403A3A;
+        --color-text-color-light: #707070;
+        --color-container-color: #FAFAFA;
+        --color-container: #F0EFEF;
+        --color-body-color: #FCFCFC;
+        --font-poppin:"Poppins";
+        --title-color: #F2F2F2;
+        --color-dark-text-color: #BFBFBF;
+        --color-dark-container-color: #212121;
+        --color-dark-container: #181616;
+        --color-dark-body-color: #2B2B2B;
+      }
+      @custom-variant dark (&:where(.dark, .dark *));
+      
+      </style>
+</head>
+
+<body class="bg-body-color dark:bg-dark-body-color text-text-color font-poppin dark:text-dark-text-color p-10  ">
+    <div class="flex justify-center p-10">
+        <div class="bg-container dark:bg-dark-container-color p-6 w-[340px] h-min-screen ">
+            <div class="flex flex-row pt-[1rem] justify-between gap-[2rem]">
+                <ion-icon class="text-xl" name="archive-outline"></ion-icon>
+                <div>
+                    <img class="size-[110px] object-cover rounded-full" src="img1.jpg" alt="">
+                </div>
+                <ion-icon name="sunny-outline" class="text-xl cursor-pointer hidden" id="sunny"></ion-icon>
+                <ion-icon name="moon-outline" class="text-xl cursor-pointer" id="moon"></ion-icon>
+                <!-- <ion-icon name="moon-outline"></ion-icon> -->
+            </div>
+            <div>
+                <h1 class="text-center text-2xl font-semibold py-2 ">មួន​ វ៉ាន់ណារ៉ាក់</h1>
+                <h4 class="text-center text-text-color dark:text-dark-text-color">គ្រូបង្រៀនកុំព្យូទ័រ</h4>
+            </div>
+            <div>
+                <div class="py-4 space-y-2">
+                    <div class="flex flex-row items-center gap-[5px] ">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p class="text-[15px]">ភ្នំពេញ, កម្ពុជា
+                        </p>
+                    </div>
+                    <div class="flex flex-row items-center gap-[5px] ">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p class="text-[15px]">vannarakislove@gmail.com</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-[5px]">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p class="text-[15px]">០៦៨​ ៥៣៨ ៩២២</p>
+                    </div>
+                </div>
+                <h2 class=" uppercase tracking-[4px] text-xl font-semibold">សង្គម</h2>
+                <div class="py-4 space-y-2">
+                    <div class="flex flex-row items-center gap-[5px]">
+                        <ion-icon name="logo-google"></ion-icon>
+                        <p class="text-[15px]">@vannarak</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-[5px]">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <p class="text-[15px]">@vannarak</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-[5px]">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <p class="text-[15px]">@vannarak</p>
+                    </div>
+                </div>
+                <h2 class="uppercase tracking-[4px] text-xl font-semibold">ប្រវត្តិរូប</h2>
+                <p class="text-[15px] py-4 text-justify ">
+                    ខ្ញុំឈ្មោះមួន វ៉ាន់ណារ៉ាក់ ភេទ​ប្រុស ឆ្នាំនេះមានអាយុ១៩
+                    ហើយកំពុងសិក្សាលើមុខជំនាញព័ត៌មានវិទ្យាឆ្នាំទីមួយឆមាសពីរនៅសាកលវិទ្យាល័យ​ South-East Asia</p>
+                <h2 class="uppercase tracking-[4px] text-xl font-semibold">ការអប់រំ</h2>
+                <div class="grid gap-2 py-6">
+                    <div class="flex gap-2">
+                        <div
+                            class="size-4 rounded-full mt-1.5 shrink-0 translate-x-[3px] bg-text-color dark:bg-dark-text-color">
+                        </div>
+                        <div class="w-1 h-[110%] translate-y-3 -translate-x-3.5 bg-text-color dark:bg-dark-text-color">
+                        </div>
+                        <div>
+                            <h3 class="uppercase font-semibold ">បឋមសិក្សា</h3>
+                            <h4 class="py-3 text-sm font-semibold">បានបញ្ចប់ការសិក្សានៅសាលាបឋមបាគង</h4>
+                            <p class="text-[15px]">២០១៣ - ២០១៩</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <div
+                            class="size-4  rounded-full mt-1.5 shrink-0 translate-x-[3px] bg-text-color dark:bg-dark-text-color">
+                        </div>
+                        <div class="w-1 h-[110%] bg-text-color translate-y-3 -translate-x-3.5 dark:bg-dark-text-color">
+                        </div>
+                        <div>
+                            <h3 class="uppercase font-semibold ">អនុវិទ្យាល័យ</h3>
+                            <h4 class="py-3 text-sm font-semibold">បានបញ្ចប់ការសិក្សានៅសាលាអនុវិទ្យាល័យម៉ូតវ៉ានី</h4>
+                            <p class="text-[15px]">២០១៩ - ២០២២</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div
+                            class="size-4  rounded-full mt-1.5 shrink-0 translate-x-[3px] bg-text-color dark:bg-dark-text-color">
+                        </div>
+                        <div class="w-1 h-[110%] bg-text-color translate-y-3 -translate-x-3.5 dark:bg-dark-text-color">
+                        </div>
+                        <div>
+                            <h3 class="uppercase font-semibold ">វិទ្យាល័យ</h3>
+                            <h4 class="py-3 text-sm font-semibold">បានបញ្ចប់ការសិក្សានៅសាលាវិទ្យាល័យហ៊ុនសែនប្រាសាទបាគង
+                            </h4>
+                            <p class="text-[15px]">២០២២ - ២០២៤</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <div
+                            class="size-4 bg-text-color rounded-full mt-1.5 shrink-0 translate-x-[3.3px] dark:bg-dark-text-color">
+                        </div>
+                        <div class="ml-[10px]">
+                            <h3 class="uppercase font-semibold ">សាកវិទ្យាល័យ</h3>
+                            <h4 class="py-3 text-sm font-semibold">
+                                កំពុងសិក្សានៅសាកលវិទ្យាល័យ​ South-East Asia (USEA)</h4>
+                            <p class="text-[15px]">២០២៤ - បច្ចុប្បន្ន</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class=" uppercase tracking-[4px] text-xl font-semibold">ជំនាញ</h2>
+
+                    <ul class="grid grid-cols-2 list-disc p-4">
+                        <li class="py-1.5">Html</li>
+                        <li class="py-1.5">Css</li>
+                        <li class="py-1.5">Cisco ITE</li>
+                        <li class="py-1.5">Word</li>
+                        <li class="py-1.5">Excel</li>
+                        <li class="py-1.5">PowerPoint</li>
+                        <li class="py-1.5">C++</li>
+                        <li class="py-1.5">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-container-color dark:bg-dark-container-color p-6 w-[660px] h-min-screen">
+            <h2 class=" uppercase tracking-[4px] text-xl font-semibold">បទពិសោធន៍</h2>
+            <div class="grid gap-2 py-6">
+                <div class="flex gap-2">
+                    <div
+                        class="size-4 rounded-full mt-1.5 shrink-0 translate-x-[3px] bg-text-color dark:bg-dark-text-color">
+                    </div>
+                    <div class="w-1.5 h-[110%] translate-y-3 -translate-x-3.5 bg-text-color dark:bg-dark-text-color">
+                    </div>
+                    <div>
+                        <h3 class="uppercase font-semibold ">ការបង្រៀ​នភាសាអង់គ្លេស</h3>
+                        <h4 class="py-3 text-sm font-semibold">ចាប់ពី ២០២២​ ដល់ ២០២៣ | ថ្នាក់មូលដ្ឋាននៃភាសាអង់គ្លេស</h4>
+                        <p class="text-[15px]">
+                            ធ្វើការនៅក្នុងក្រុមហ៊ុននេះដោយលះបង់ការទទួលខុសត្រូវល្អបំផុតនៅក្នុងតំបន់នោះ។
+                            ឆ្លើយតប ចែកចាយ
+                            លទ្ធផលល្អបំផុតសម្រាប់ក្រុមហ៊ុន និងការបង្កើនផលិតភាព។</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <div
+                        class="size-4  rounded-full mt-1.5 shrink-0 translate-x-[3px] bg-text-color dark:bg-dark-text-color">
+                    </div>
+                    <div class="w-1.5 h-[110%] bg-text-color translate-y-3 -translate-x-3.5 dark:bg-dark-text-color">
+                    </div>
+                    <div>
+                        <h3 class="uppercase font-semibold ">អ្នករចនាបថផ្នែករូបភាព</h3>
+                        <h4 class="py-3 text-sm font-semibold">ចាប់ពី ២០២៣​ ដល់ ២០២៤ | អាដូប៊ី </h4>
+                        <p class="text-[15px]">
+                            ធ្វើការនៅក្នុងក្រុមហ៊ុននេះដោយលះបង់ការទទួលខុសត្រូវល្អបំផុតនៅក្នុងតំបន់នោះ។
+                            ឆ្លើយតប, ចែកចាយ
+                            លទ្ធផលល្អបំផុតសម្រាប់ក្រុមហ៊ុន និងការបង្កើនផលិតភាព។</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <div
+                        class="size-4 bg-text-color rounded-full mt-1.5 shrink-0 translate-x-[3.3px] dark:bg-dark-text-color">
+                    </div>
+                    <div class="ml-[10px]">
+                        <h3 class="uppercase font-semibold ">គ្រូបង្រៀនកុំព្យទ័រ</h3>
+                        <h4 class="py-3 text-sm font-semibold">ចាប់ពី ២០២៤​ ដល់ ២០២៥ | ផ្នែករឹងនិងផ្នែកទន់</h4>
+                        <p class="text-[15px]">ធ្វើការនៅក្នុងក្រុមហ៊ុននេះដោយលះបង់ការទទួលខុសត្រូវល្អបំផុតនៅក្នុងតំបន់នោះ។
+                            ឆ្លើយតប, ចែកចាយ
+                            លទ្ធផលល្អបំផុតសម្រាប់ក្រុមហ៊ុន និងការបង្កើនផលិតភាព។</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4">
+                <h2 class=" uppercase tracking-[4px] text-xl font-semibold">សញ្ញាបត្រ</h2>
+                <div class="flex flex-col gap-5">
+                    <div>
+                        <h3 class="py-3 text-sm font-semibold">បញ្ជាក់សម្រាប់ការអនុលោមតាមតំបន់ការងារ (២០២២)</h3>
+                        <p class="text-[15px]">សម្រាប់ការបំពេញតាមការរំពឹងទុកនៃការដឹកនាំក្រុមធ្វើការទៅតាមការកំណត់
+                            ការងារក្នុងវិស័យការងារ។
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="py-3 text-sm font-semibold">វិញ្ញាបនបត្រនៃការចូលរួមក្នុងបច្ចេកវិទ្យាកុំព្យូទ័រ (២០២៣)
+                        </h3>
+                        <p class="text-[15px]">សម្រាប់ការបំពេញតាមការរំពឹងទុកនៃការដឹកនាំក្រុមធ្វើការទៅតាមការកំណត់
+                            ការងារក្នុងវិស័យការងារ។
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="py-3 text-sm font-semibold">មេដាយសមិទ្ធិផលសម្រាប់ឧត្តមភាពផលិតភាពក្នុងអំឡុងពេល
+                            ឆ្នាំ (២០២៤)</h3>
+                        <p class="text-[15px]">សម្រាប់ការបំពេញតាមការរំពឹងទុកនៃការដឹកនាំក្រុមធ្វើការទៅតាមការកំណត់
+                            ការងារក្នុងវិស័យការងារ។
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class=" tracking-[4px] text-xl font-semibold">អំណះអំណាង</h2>
+                <div class="flex flex-row gap-[13rem] py-4">
+                    <div class="space-y-1.5">
+                        <p class="text-[15px]">គ្រូបង្រៀនរូបវិទ្យា</p>
+                        <h3 class="text-[16px] font-semibold">លោក ហេងគីមលាន</h3>
+                        <p class="text-[15px]">លេខទូរស័ព្ទ ០៧៨ ៦៦៣ ៣៥៦</p>
+                        <p class="text-[15px]">អ៊ីម៉ែល: kimleanheng@email.com</p>
+                    </div>
+                    <div class="space-y-1.5">
+                        <p class="text-[15px]">គ្រូបង្រៀនគណិតវិទ្យា</p>
+                        <h3 class="text-[16px] font-semibold">លោក ហេងគីមលាន</h3>
+                        <p class="text-[15px]">លេខទូរស័ព្ទ ០៧៨ ៦៦៣ ៣៥៦</p>
+                        <p class="text-[15px]">អ៊ីម៉ែល: kimleanheng@email.com</p>
+                    </div>
+                </div>
+                <h2 class=" tracking-[4px] text-xl font-semibold ">ភាសា</h2>
+                <div class="flex flex-row p-4 gap-20">
+
+                    <li>ចិន</li>
+                    <li>អង់គ្លេស</li>
+                    <li>ខ្មែរ</li>
+
+                </div>
+                <h2 class=" tracking-[4px] text-xl font-semibold">ចំណង់ចំណូលចិត្ត</h2>
+                <div class="flex py-6 gap-20">
+                    <div class="flex flex-col items-center gap-2.5">
+                        <ion-icon name="headset-outline"></ion-icon>
+                        <p>ចម្រៀង</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2.5">
+                        <ion-icon name="logo-angular"></ion-icon>
+                        <p>ទស្សនា</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2.5">
+                        <ion-icon name="book-outline"></ion-icon>
+                        <p>អាន</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2.5">
+                        <ion-icon name="barbell-outline"></ion-icon>
+                        <p>ហាត់</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const moon = document.getElementById("moon");
+        const sunny = document.getElementById("sunny");
+        const html = document.querySelector("html");
+        moon.addEventListener("click", () => {
+            html.classList.add("dark");
+            moon.style.display = "none";
+            sunny.style.display = "block";
+        })
+        sunny.addEventListener("click", () => {
+            html.classList.remove("dark");
+            moon.style.display = "block";
+            sunny.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>
